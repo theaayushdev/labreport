@@ -65,3 +65,9 @@ values  (1,'2021-01-15','1A','1G',4,1,20),
 
 
        
+-- 1. Write a query to display the name of the movie, the name of the viewer, and the seat number for each ticket.
+
+SELECT m.moviename
+FROM movies m
+JOIN tickets t ON m.movieid = t.movieid
+WHERE t.viewerid = 1;
